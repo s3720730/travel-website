@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <!-- meta http-equiv="X-Frame-Options" content="deny" -->
+    <title>My First Webpage</title>
+
+    <!-- We will cover style later. Skip down to the body tag -->
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css"/>
+    <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css" disabled>
+    <script src='wireframe.js'></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+      <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Allana Davies
+      </div>
+    </header>
+
+    <nav>
+      Assignments:
+      <!-- link locations: relative to current directory -->
+      <ul>
+        <li><a href="a2/index.php" target="_blank">A2</a></li>
+        <li><a href="a3/index.php" target="_blank">A3</a></li>
+      </ul> |
+      <!-- link locations: relative to e54061's root web directory -->
+      <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
+      <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> | 
+      <!-- link location: absolute -->
+      <a href='' target="_blank">WP Public</a>
+    </nav>
+
+    <main>
+      <article id='about-me'>
+        <h2>About me</h2>
+        <p>
+          <img src='../media/picture.jpg' width='200' alt='my photo' />
+        </p>
+        <details open>
+          <summary>read more ...</summary>
+            <table id="more-about-me">
+              <tr>
+                <th>Have you any programming or web design experience?</th>
+                <td>I learnt java from Programming Techniques last semester, other than this I've had minute experiences coding in high school.</td>
+              </tr>
+              <tr>
+                <th>Do you see yourself as a programmer or designer, or both?</th>
+                <td>Programmer, I haven't done much of the design aspect of coding.</td>
+              </tr>
+              <tr>
+                <th>What has brought you to this course at RMIT?</th>
+                <td>My passion in computer science and maths and to get a well paying job.</td>
+              </tr>
+              <tr>
+                <th>What are you hoping to get out of the course?</th>
+                <td>I want to be able to code adeptly and be industry ready.</td>
+              </tr>
+              <tr>
+                <th>Assignments allow for individual or paried work. What strengths do you have and what strengths would you like your assignment partner to have?</th>
+                <td>I believe I work well in a team environment and am dependable on finishing work before deadlines; I'd like a partner who's punctual and passionate about web programming.</td>
+              </tr>
+              <tr>
+                <th>What websites do you use the most? (NB: "family friendly" !)</th>
+                <td>I constantly visit youtube.com.</td>
+              </tr>
+              <tr>
+                <th>Do you have any interests or hobbies?</th>
+                <td>Gaming and soccer.</td>
+              </tr>
+            </table>
+        </details>
+      </article>
+  
+    </main>
+
+    <footer>
+      &copy; Allana Davies
+      <script>
+        document.write(new Date().getFullYear());
+      </script>.
+      <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+    </footer>
+    
+  </body>
+</html>
